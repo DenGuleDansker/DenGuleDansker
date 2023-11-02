@@ -6,6 +6,12 @@
 </div>
 </div>
 
+###
+
+<img src="github-user-contribution.svg" alt="Snake animation" />
+
+###
+
 ## Languages and tools
 <p align="center">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
