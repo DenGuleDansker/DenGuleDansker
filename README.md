@@ -14,11 +14,10 @@ public class me{
 }
 
 ```
-
 - Frontend
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=html,css,javascript" />
+    <img src="https://skillicons.dev/icons?i=javascript,html,css" />
     </a>
 </p>
 
