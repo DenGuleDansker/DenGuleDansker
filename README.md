@@ -2,14 +2,17 @@
 
 [![Linkedin: Chi linh](https://img.shields.io/badge/-chilinh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chi-linh-mac/)](https://www.linkedin.com/in/chi-linh-mac/)
 [![GitHub DenGuleDansker](https://img.shields.io/github/followers/DenGuleDansker?label=follow&style=social)](https://github.com/DenGuleDansker)
-```javascript
-const Chi Linh = {
-  Studying: [IT-Architecture],
-  From: [Denmark, Aarhus],
-  code: [C#, HTML, CSS, Javascript],
-  tools: [Node, MongoDB, PostreSQL, Docker, Azure],
+
+```golang
+public class me{
+    string username = "Chi Linh";
+    int age = 23;
+    string country = "Denmark"
+    string city = "Aarhus"
+    string studying = "IT-Architecture"
 }
 ```
+
 <p align="center">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
     <img src="https://skillicons.dev/icons?i=cs,html,css,azure,mongodb,postgres,visualstudio,vscode,docker,javascript,node" />
