@@ -7,9 +7,7 @@
 ```golang
 public class me{
     string username = "Chi Linh";
-    int age = 23;
     string country = "Denmark"
-    string city = "Aarhus"
     string studying = "IT-Architecture"
 }
 
@@ -45,7 +43,8 @@ public class me{
 ## Stats:
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=denguledansker&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=gotham&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=denguledansker&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=gotham&hide_border=false&order=2" height="150" alt="languages graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=denguledansker&locale=en&hide_title=false&layout=compact&card_width=320
+&langs_count=5&theme=gotham&hide_border=false&order=2" height="150" alt="languages graph"  />
 <p align="center"><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DenGuleDansker&theme=gotham" alt="DenGuleDansker" /></p>
     
 ![DenGuleDanskers's Graph](https://github-readme-activity-graph.vercel.app/graph?username=DenGuleDansker&custom_title=DenGuleDanskers's%20GitHub%20Activity%20Graph&bg_color=0C1014&color=2AA889&line=2AA889&point=2AA889&area_color=599CAB&title_color=#2AA889&area=true)
