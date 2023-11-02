@@ -8,7 +8,7 @@
 public class me{
     string username = "Chi Linh";
     string country = "Denmark"
-    string studying = "IT-Architecture"
+    string studying = "PBA IT-Architecture"
 }
 
 ```
