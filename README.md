@@ -1,6 +1,5 @@
 ```javascript
 const Chi Linh = {
-  pronouns: "she" | "her",
   Studying: [IT-Architecture],
   From: [Denmark, Aarhus]
 }
