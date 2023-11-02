@@ -1,5 +1,6 @@
-<h1>Welcome</h1>
+## Welcome
 
+[![Gmail](https://img.shields.io/badge/-Gmail-c14438?style=flat&logo=Gmail&logoColor=white)](mailto:chilinhm@gmail.com)
 [![Linkedin: Chi linh](https://img.shields.io/badge/-chilinh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chi-linh-mac/)](https://www.linkedin.com/in/chi-linh-mac/)
 [![GitHub DenGuleDansker](https://img.shields.io/github/followers/DenGuleDansker?label=follow&style=social)](https://github.com/DenGuleDansker)
 
@@ -26,5 +27,6 @@ public class me{
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=denguledansker&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=gotham&hide_border=false&order=2" height="150" alt="languages graph"  />
 <p align="center"><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DenGuleDansker&theme=gotham" alt="DenGuleDansker" /></p>
 </div>
+
 
 
