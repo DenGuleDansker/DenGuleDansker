@@ -1,10 +1,16 @@
 ```javascript
 const Chi Linh = {
   Studying: [IT-Architecture],
-  From: [Denmark, Aarhus]
+  From: [Denmark, Aarhus],
+  code: [C#, HTML, CSS, Javascript],
+  tools: [Node, MongoDB, PostreSQL, Docker, Azure],
 }
 ```
-
+<p align="center">
+    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
+    <img src="https://skillicons.dev/icons?i=cs,html,css,azure,mongodb,postgres,visualstudio,vscode,docker,javascript,node" />
+    </a>
+</p>
 
 ## Stats:
 <div align="center">
@@ -13,10 +19,4 @@ const Chi Linh = {
 <p align="center"><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DenGuleDansker&theme=gotham" alt="DenGuleDansker" /></p>
 </div>
 
-## Languages and tools
-<p align="center">
-    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=cs,html,css,azure,mongodb,postgres,visualstudio,vscode,docker,javascript" />
-    </a>
-</p>
 
