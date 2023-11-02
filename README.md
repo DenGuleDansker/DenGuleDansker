@@ -13,6 +13,7 @@ public class me{
 
 ```
 - Frontend
+
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
     <img src="https://skillicons.dev/icons?i=javascript,html,css" />
@@ -36,7 +37,7 @@ public class me{
 - Tools
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm" />
+    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm,bash" />
     </a>
 </p>
 
