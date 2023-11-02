@@ -27,7 +27,7 @@ public class me{
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=denguledansker&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=gotham&hide_border=false&order=2" height="150" alt="languages graph"  />
 <p align="center"><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DenGuleDansker&theme=gotham" alt="DenGuleDansker" /></p>
     
-![Supuna97's Graph](https://github-readme-activity-graph.vercel.app/graph?username=DenGuleDansker&custom_title=Supun's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=7F3FBF&line=7F3FBF&point=7F3FBF&area_color=FFFFFF&title_color=FFFFFF&area=true)
+![DenGuleDanskers's Graph](https://github-readme-activity-graph.vercel.app/graph?username=DenGuleDansker&custom_title=Supun's%20GitHub%20Activity%20Graph&bg_color=0D1117&color=7F3FBF&line=7F3FBF&point=7F3FBF&area_color=FFFFFF&title_color=FFFFFF&area=true)
 <br>
 </div>
 
