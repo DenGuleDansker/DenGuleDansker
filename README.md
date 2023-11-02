@@ -1,4 +1,4 @@
-[![Linkedin: Chilinh](https://img.shields.io/badge/-thaianebraga-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chi-linh-mac/)](https://www.linkedin.com/in/chi-linh-mac/)
+[![Linkedin: Chilinh](https://img.shields.io/badge/-Chi-Linh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chi-linh-mac/)](https://www.linkedin.com/in/chi-linh-mac/)
 [![GitHub DenGuleDansker](https://img.shields.io/github/followers/DenGuleDansker?label=follow&style=social)](https://github.com/DenGuleDansker)
 ```javascript
 const Chi Linh = {
