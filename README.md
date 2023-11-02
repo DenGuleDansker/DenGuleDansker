@@ -15,3 +15,5 @@
 
 ## Contributes
 ![](./profile-3d-contrib/profile-night-view.svg)
+
+<p align="center"><img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DenGuleDansker&theme=gotham" alt="DenGuleDansker" /></p>
