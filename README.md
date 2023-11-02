@@ -39,7 +39,7 @@ public class me{
 - Tools
 <p align="center">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet" />
+    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm" />
     </a>
 </p>
 
