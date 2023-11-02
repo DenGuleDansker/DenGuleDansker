@@ -15,9 +15,31 @@ public class me{
 
 ```
 
+- Frontend
 <p align="center">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=cs,html,css,azure,mongodb,postgres,visualstudio,vscode,docker,javascript,node" />
+    <img src="https://skillicons.dev/icons?i=html,css,javascript" />
+    </a>
+</p>
+
+- Backend
+<p align="center">
+    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
+    <img src="https://skillicons.dev/icons?i=cs,javascript,nodejs" />
+    </a>
+</p>
+
+- Database
+<p align="center">
+    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
+    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite" />
+    </a>
+</p>
+
+- Tools
+<p align="center">
+    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
+    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet" />
     </a>
 </p>
 
