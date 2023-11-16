@@ -30,14 +30,14 @@ public class me{
 - Database
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite,cosmos" />
+    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite" />
     </a>
 </p>
 
 - Tools
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm,bash" />
+    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm,bash,azure" />
     </a>
 </p>
 
