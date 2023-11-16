@@ -30,7 +30,7 @@ public class me{
 - Database
 <p align="left">
     <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite" />
+    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite,cosmos" />
     </a>
 </p>
 
