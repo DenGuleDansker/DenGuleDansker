@@ -12,34 +12,6 @@ public class me{
 }
 
 ```
-- Frontend
-
-<p align="left">
-    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=javascript,html,css" />
-    </a>
-</p>
-
-- Backend
-<p align="left">
-    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=cs,nodejs" />
-    </a>
-</p>
-
-- Database
-<p align="left">
-    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=mongodb,postgres,sqlite" />
-    </a>
-</p>
-
-- Tools
-<p align="left">
-    <a href=["https://skillicons.dev"](https://www.linkedin.com/in/chi-linh-mac/)>
-    <img src="https://skillicons.dev/icons?i=azure,visualstudio,vscode,docker,github,postman,dotnet,wasm,bash" />
-    </a>
-</p>
 
 ## Stats:
 <div align="center">
