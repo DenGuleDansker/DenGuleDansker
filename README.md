@@ -7,7 +7,7 @@
 ```cs
 public class me
 {
-    string username = "Chi Linh";
+    string firstName = "Chi Linh";
     string country = "Denmark";
     string studying = "PBA in IT-Architecture";
 }
