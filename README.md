@@ -5,7 +5,8 @@
 [![GitHub DenGuleDansker](https://img.shields.io/github/followers/DenGuleDansker?label=follow&style=social)](https://github.com/DenGuleDansker)
 
 ```cs
-public class me{
+public class me
+{
     string username = "Chi Linh";
     string country = "Denmark"
     string studying = "PBA in IT-Architecture"
