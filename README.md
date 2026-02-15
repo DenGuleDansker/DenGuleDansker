@@ -1,4 +1,3 @@
-![Billede fra konference](./conf/octo.png)
 ```
   _    _      _ _       _   _____                                            
  | |  | |    | | |     | | |_   _|                                           
