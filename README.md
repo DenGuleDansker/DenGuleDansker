@@ -16,6 +16,8 @@ public class me
 <br>
 </div>
 
+## Octo:
+![Billede fra konference](./conf/octocat.png)
 
 
 
