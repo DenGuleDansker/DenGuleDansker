@@ -9,7 +9,6 @@ public class me
 {
     string firstName = "Chi Linh";
     string country = "Denmark";
-    string studying = "PBA in IT-Architecture";
 }
 
 ```
