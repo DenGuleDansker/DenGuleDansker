@@ -1,4 +1,3 @@
-## Octo:
 ![Billede fra konference](./conf/octocat.png)
 
 ## Welcome
