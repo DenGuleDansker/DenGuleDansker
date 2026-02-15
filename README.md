@@ -1,4 +1,4 @@
-![Billede fra konference](./conf/octocat.png)
+![Billede fra konference](./conf/octo.png)
 
 ## Welcome
 [![Linkedin: Chi linh](https://img.shields.io/badge/-chilinh-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/chi-linh-mac/)](https://www.linkedin.com/in/chi-linh-mac/)
