@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/pipeline-dashboard.svg
+          git add assets/profile-card-day.svg assets/profile-card-night.svg
           git diff --staged --quiet || git commit -m "Update pipeline dashboard"
           git push
