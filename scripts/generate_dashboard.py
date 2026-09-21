@@ -125,13 +125,16 @@ def bar_segments(x, y, w, h, stats, c, radius=3):
 
 def render_svg(all_stats, variant, contrib_inner, contrib_vw, contrib_vh):
     c = THEMES[variant]
-    width = 880
     pad = 28
-    content_w = width - 2 * pad
+    gap = 24
+    left_w = 580
+    right_w = 660
+    width = pad * 2 + left_w + gap + right_w
+    right_x = pad + left_w + gap
     body = []
     y = 0
 
-    # header
+    # header (spans full width)
     y += 34
     body.append(f'<text x="{pad}" y="{y}" font-size="11" letter-spacing="1.5" fill="{c["ACCENT"]}" font-weight="600">{esc(OWNER.upper())} · GITHUB</text>')
     y += 28
@@ -141,14 +144,17 @@ def render_svg(all_stats, variant, contrib_inner, contrib_vw, contrib_vh):
     total_runs = sum(s["total"] for s in all_stats)
     body.append(f'<text x="{pad}" y="{y}" font-size="12" fill="{c["TEXT_MUTED"]}">Auto-updated {esc(today)} · {len(all_stats)} repositories · {total_runs} runs total</text>')
     y += 18
+    content_top = y
 
-    # stat tiles
+    # left column: stat tiles (2x2) + repo rows
+    body.append(f'<text x="{pad}" y="{content_top+12:.1f}" font-size="11" letter-spacing="1.5" fill="{c["ACCENT"]}" font-weight="600">PIPELINES</text>')
+    yl = content_top + 26
     total_success = sum(s["success"] for s in all_stats)
     total_failure = sum(s["failure"] for s in all_stats)
     active_count = sum(1 for s in all_stats if s["active"])
     success_rate = (100 * total_success / total_runs) if total_runs else 0
     tile_h = 70
-    tile_w = (content_w - 3 * 12) / 4
+    tile_w = (left_w - 12) / 2
     tiles = [
         (str(total_runs), "Total runs", c["TEXT"]),
         (f"{success_rate:.0f}%", "Success rate", c["SUCCESS"]),
@@ -156,68 +162,73 @@ def render_svg(all_stats, variant, contrib_inner, contrib_vw, contrib_vh):
         (str(total_failure), "Failed runs", c["FAILURE"] if total_failure else c["TEXT_MUTED"]),
     ]
     for i, (num, label, color) in enumerate(tiles):
-        tx = pad + i * (tile_w + 12)
-        body.append(f'<rect x="{tx:.1f}" y="{y}" width="{tile_w:.1f}" height="{tile_h}" rx="8" fill="{c["SURFACE"]}" stroke="{c["BORDER"]}"/>')
-        body.append(f'<text x="{tx+14:.1f}" y="{y+32}" font-size="22" fill="{color}" font-weight="600">{esc(num)}</text>')
-        body.append(f'<text x="{tx+14:.1f}" y="{y+50}" font-size="11" fill="{c["TEXT_MUTED"]}">{esc(label)}</text>')
-    y += tile_h + 26
+        col, row = i % 2, i // 2
+        tx = pad + col * (tile_w + 12)
+        ty = yl + row * (tile_h + 12)
+        body.append(f'<rect x="{tx:.1f}" y="{ty:.1f}" width="{tile_w:.1f}" height="{tile_h}" rx="8" fill="{c["SURFACE"]}" stroke="{c["BORDER"]}"/>')
+        body.append(f'<text x="{tx+14:.1f}" y="{ty+32:.1f}" font-size="22" fill="{color}" font-weight="600">{esc(num)}</text>')
+        body.append(f'<text x="{tx+14:.1f}" y="{ty+50:.1f}" font-size="11" fill="{c["TEXT_MUTED"]}">{esc(label)}</text>')
+    yl += 2 * tile_h + 12 + 24
 
     # repo rows
-    row_h = 78
+    row_h = 88
     for s in all_stats:
-        ry = y
-        body.append(f'<rect x="{pad}" y="{ry}" width="{content_w}" height="{row_h}" rx="10" fill="{c["SURFACE"]}" stroke="{c["BORDER"]}"/>')
-        body.append(f'<text x="{pad+20}" y="{ry+26}" font-size="14" fill="{c["TEXT"]}" font-weight="600">{esc(s["repo"])}</text>')
+        ry = yl
+        body.append(f'<rect x="{pad}" y="{ry}" width="{left_w}" height="{row_h-10}" rx="10" fill="{c["SURFACE"]}" stroke="{c["BORDER"]}"/>')
+        body.append(f'<text x="{pad+18}" y="{ry+24}" font-size="14" fill="{c["TEXT"]}" font-weight="600">{esc(s["repo"])}</text>')
         wf = " + ".join(s["workflows"]) if s["workflows"] else "—"
-        body.append(f'<text x="{pad+20}" y="{ry+42}" font-size="11" fill="{c["TEXT_MUTED"]}">{esc(wf)}</text>')
+        body.append(f'<text x="{pad+18}" y="{ry+40}" font-size="11" fill="{c["TEXT_MUTED"]}">{esc(wf)}</text>')
 
         tag = "active" if s["active"] else "dormant"
         tag_color = c["SUCCESS"] if s["active"] else c["TEXT_MUTED"]
         tag_w = 58
-        tag_x = pad + content_w - 20 - tag_w
-        body.append(f'<rect x="{tag_x:.1f}" y="{ry+14}" width="{tag_w}" height="20" rx="10" fill="{c["BG"]}" stroke="{tag_color}"/>')
-        body.append(f'<text x="{tag_x+tag_w/2:.1f}" y="{ry+28}" font-size="10" fill="{tag_color}" text-anchor="middle" font-weight="600">{tag}</text>')
+        tag_x = pad + left_w - 18 - tag_w
+        body.append(f'<rect x="{tag_x:.1f}" y="{ry+13}" width="{tag_w}" height="20" rx="10" fill="{c["BG"]}" stroke="{tag_color}"/>')
+        body.append(f'<text x="{tag_x+tag_w/2:.1f}" y="{ry+27}" font-size="10" fill="{tag_color}" text-anchor="middle" font-weight="600">{tag}</text>')
 
-        bar_w = 220
-        body.append(bar_segments(pad+20, ry + 52, bar_w, 8, s, c))
+        bar_w = left_w - 36
+        body.append(bar_segments(pad+18, ry + 50, bar_w, 8, s, c))
         rate = (100 * s["success"] / s["total"]) if s["total"] else 0
-        body.append(f'<text x="{pad+20+bar_w+12}" y="{ry+59}" font-size="11" fill="{c["TEXT_MUTED"]}">{s["total"]} runs · {rate:.0f}% success</text>')
 
         if s["last"]:
             last_dt = datetime.datetime.fromisoformat(s["last"]["created_at"].replace("Z", "+00:00"))
             last_str = last_dt.strftime("%d %b %Y, %H:%M")
             concl = s["last"]["conclusion"] or "unknown"
             dot_color = {"success": c["SUCCESS"], "failure": c["FAILURE"], "cancelled": c["CANCELLED"]}.get(concl, c["TEXT_MUTED"])
-            last_label = f'last: {concl} · {last_str}'
+            last_label = f'{s["total"]} runs · {rate:.0f}% success · last: {concl} · {last_str}'
         else:
             dot_color = c["TEXT_MUTED"]
             last_label = "no runs yet"
-        body.append(f'<circle cx="{pad+24}" cy="{ry+70}" r="3.5" fill="{dot_color}"/>')
-        body.append(f'<text x="{pad+34}" y="{ry+73}" font-size="11" fill="{c["TEXT_MUTED"]}">{esc(last_label)}</text>')
-        y += row_h + 10
+        body.append(f'<circle cx="{pad+22}" cy="{ry+68}" r="3.5" fill="{dot_color}"/>')
+        body.append(f'<text x="{pad+32}" y="{ry+71}" font-size="10.5" fill="{c["TEXT_MUTED"]}">{esc(last_label)}</text>')
+        yl += row_h
 
-    y += 16
+    left_bottom = yl - 10  # trailing gap after the last row
 
-    # contribution calendar, embedded and scaled to the card's content width
-    body.append(f'<text x="{pad}" y="{y+12}" font-size="11" letter-spacing="1.5" fill="{c["ACCENT"]}" font-weight="600">CONTRIBUTIONS</text>')
-    y += 26
-    scale = content_w / contrib_vw
+    # right column: contribution calendar, top-aligned with the PIPELINES label
+    scale = right_w / contrib_vw
     cal_h = contrib_vh * scale
+    label_h = 26
+    right_content_h = label_h + cal_h
+    yr = content_top
+
+    body.append(f'<text x="{right_x}" y="{yr+12:.1f}" font-size="11" letter-spacing="1.5" fill="{c["ACCENT"]}" font-weight="600">CONTRIBUTIONS</text>')
+    yr += label_h
     body.append(
-        f'<svg x="{pad}" y="{y}" width="{content_w:.1f}" height="{cal_h:.1f}" '
+        f'<svg x="{right_x}" y="{yr:.1f}" width="{right_w:.1f}" height="{cal_h:.1f}" '
         f'viewBox="0 0 {contrib_vw:.0f} {contrib_vh:.0f}">{contrib_inner}</svg>'
     )
-    y += cal_h + 20
 
-    body.append(f'<text x="{pad}" y="{y+10}" font-size="10" fill="{c["TEXT_MUTED"]}">Generated by a scheduled GitHub Action · github.com/{OWNER}/{OWNER}</text>')
+    y = max(left_bottom, content_top + right_content_h) + 20
+    body.append(f'<text x="{pad}" y="{y+10:.1f}" font-size="10" fill="{c["TEXT_MUTED"]}">Generated by a scheduled GitHub Action · github.com/{OWNER}/{OWNER}</text>')
     y += 24
 
     height = y
     head = [
-        f'<svg width="{width}" height="{height:.0f}" viewBox="0 0 {width} {height:.0f}" '
+        f'<svg width="{width:.0f}" height="{height:.0f}" viewBox="0 0 {width:.0f} {height:.0f}" '
         f'xmlns="http://www.w3.org/2000/svg" font-family="{FONT}">',
-        f'<rect width="{width}" height="{height:.0f}" rx="14" fill="{c["BG"]}"/>',
-        f'<rect x="0.5" y="0.5" width="{width-1}" height="{height-1:.0f}" rx="13.5" fill="none" stroke="{c["BORDER"]}"/>',
+        f'<rect width="{width:.0f}" height="{height:.0f}" rx="14" fill="{c["BG"]}"/>',
+        f'<rect x="0.5" y="0.5" width="{width-1:.0f}" height="{height-1:.0f}" rx="13.5" fill="none" stroke="{c["BORDER"]}"/>',
     ]
     return "\n".join(head + body + ["</svg>"])
 
