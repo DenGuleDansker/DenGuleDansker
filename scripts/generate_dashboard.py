@@ -17,15 +17,16 @@ REPOS = ["discordBot", "AgentStatusHook", "react-resume", "portfolio-html"]
 TOKEN = os.environ.get("DASHBOARD_TOKEN", "")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "assets", "pipeline-dashboard.svg")
 
-BG = "#0D1117"
-SURFACE = "#161B22"
-BORDER = "#2B323C"
-TEXT = "#E6EDF3"
-TEXT_MUTED = "#8B94A1"
-ACCENT = "#818CF8"
-SUCCESS = "#3FB950"
-FAILURE = "#F85149"
-CANCELLED = "#8B949E"
+# Matches the portfolio-html / 3D-contrib palette (--bg-page, --steel, --accent)
+BG = "#071520"
+SURFACE = "#0a1f2e"
+BORDER = "#1a3a52"
+TEXT = "#d6e0e8"
+TEXT_MUTED = "#8fafc4"
+ACCENT = "#b26617"
+SUCCESS = "#3fa860"
+FAILURE = "#d4574a"
+CANCELLED = "#5f8299"
 FONT = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace"
 
 
