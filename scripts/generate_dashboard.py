@@ -7,7 +7,13 @@ import json
 
 OWNER = "DenGuleDansker"
 REPOS = ["discordBot", "AgentStatusHook", "react-resume", "telegram-bot", "portfolio-html"]
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+# NOTE: the default `secrets.GITHUB_TOKEN` in Actions is scoped only to the
+# repo the workflow runs in, so using it to read Actions data on the other
+# (public) repos below returns 404. These repos are public, so unauthenticated
+# calls work fine within the 60 req/hour anonymous limit (5 repos per run).
+# Set DASHBOARD_TOKEN (a PAT with public_repo scope) as a repo secret only if
+# more headroom is ever needed.
+TOKEN = os.environ.get("DASHBOARD_TOKEN", "")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "assets", "pipeline-dashboard.svg")
 
 BG = "#0D1117"
