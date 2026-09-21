@@ -1,0 +1,80 @@
+<svg width="880" height="682" viewBox="0 0 880 682" xmlns="http://www.w3.org/2000/svg" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+<rect width="880" height="682" rx="14" fill="#0D1117"/>
+<rect x="0.5" y="0.5" width="879" height="681" rx="13.5" fill="none" stroke="#2B323C"/>
+<text x="28" y="34" font-size="11" letter-spacing="1.5" fill="#818CF8" font-weight="600">DENGULEDANSKER · GITHUB ACTIONS</text>
+<text x="28" y="62" font-size="22" fill="#E6EDF3" font-weight="600">Pipeline Overview</text>
+<text x="28" y="84" font-size="12" fill="#8B94A1">Auto-updated 21 Sep 2026 · 5 repositories · 265 runs total</text>
+<rect x="28.0" y="96" width="197.0" height="70" rx="8" fill="#161B22" stroke="#2B323C"/>
+<text x="42.0" y="128" font-size="22" fill="#E6EDF3" font-weight="600">265</text>
+<text x="42.0" y="146" font-size="11" fill="#8B94A1">Total runs</text>
+<rect x="237.0" y="96" width="197.0" height="70" rx="8" fill="#161B22" stroke="#2B323C"/>
+<text x="251.0" y="128" font-size="22" fill="#3FB950" font-weight="600">97%</text>
+<text x="251.0" y="146" font-size="11" fill="#8B94A1">Success rate</text>
+<rect x="446.0" y="96" width="197.0" height="70" rx="8" fill="#161B22" stroke="#2B323C"/>
+<text x="460.0" y="128" font-size="22" fill="#818CF8" font-weight="600">3</text>
+<text x="460.0" y="146" font-size="11" fill="#8B94A1">Active last 7 days</text>
+<rect x="655.0" y="96" width="197.0" height="70" rx="8" fill="#161B22" stroke="#2B323C"/>
+<text x="669.0" y="128" font-size="22" fill="#F85149" font-weight="600">5</text>
+<text x="669.0" y="146" font-size="11" fill="#8B94A1">Failed runs</text>
+<rect x="28" y="208" width="824" height="78" rx="10" fill="#161B22" stroke="#2B323C"/>
+<text x="48" y="234" font-size="14" fill="#E6EDF3" font-weight="600">discordBot</text>
+<text x="48" y="250" font-size="11" fill="#8B94A1">Docker</text>
+<rect x="738" y="222" width="58" height="20" rx="10" fill="#0D1117" stroke="#3FB950"/>
+<text x="767.0" y="236" font-size="10" fill="#3FB950" text-anchor="middle" font-weight="600">active</text>
+<rect x="48" y="260" width="220" height="8" rx="3" fill="#161B22"/>
+<rect x="48.0" y="260" width="217.5" height="8" fill="#3FB950"/>
+<rect x="265.5" y="260" width="2.5" height="8" fill="#F85149"/>
+<rect x="48" y="260" width="220" height="8" rx="3" fill="none" stroke="#2B323C"/>
+<text x="280" y="267" font-size="11" fill="#8B94A1">87 runs · 99% success</text>
+<circle cx="52" cy="278" r="3.5" fill="#3FB950"/>
+<text x="62" y="281" font-size="11" fill="#8B94A1">last: success · 21 Sep 2026, 08:03</text>
+<rect x="28" y="296" width="824" height="78" rx="10" fill="#161B22" stroke="#2B323C"/>
+<text x="48" y="322" font-size="14" fill="#E6EDF3" font-weight="600">AgentStatusHook</text>
+<text x="48" y="338" font-size="11" fill="#8B94A1">Docker</text>
+<rect x="738" y="310" width="58" height="20" rx="10" fill="#0D1117" stroke="#3FB950"/>
+<text x="767.0" y="324" font-size="10" fill="#3FB950" text-anchor="middle" font-weight="600">active</text>
+<rect x="48" y="348" width="220" height="8" rx="3" fill="#161B22"/>
+<rect x="48.0" y="348" width="217.0" height="8" fill="#3FB950"/>
+<rect x="265.0" y="348" width="3.0" height="8" fill="#F85149"/>
+<rect x="48" y="348" width="220" height="8" rx="3" fill="none" stroke="#2B323C"/>
+<text x="280" y="355" font-size="11" fill="#8B94A1">147 runs · 99% success</text>
+<circle cx="52" cy="366" r="3.5" fill="#3FB950"/>
+<text x="62" y="369" font-size="11" fill="#8B94A1">last: success · 19 Sep 2026, 09:39</text>
+<rect x="28" y="384" width="824" height="78" rx="10" fill="#161B22" stroke="#2B323C"/>
+<text x="48" y="410" font-size="14" fill="#E6EDF3" font-weight="600">react-resume</text>
+<text x="48" y="426" font-size="11" fill="#8B94A1">Docker + pages build and deployment</text>
+<rect x="738" y="398" width="58" height="20" rx="10" fill="#0D1117" stroke="#3FB950"/>
+<text x="767.0" y="412" font-size="10" fill="#3FB950" text-anchor="middle" font-weight="600">active</text>
+<rect x="48" y="436" width="220" height="8" rx="3" fill="#161B22"/>
+<rect x="48.0" y="436" width="146.7" height="8" fill="#3FB950"/>
+<rect x="194.7" y="436" width="48.9" height="8" fill="#F85149"/>
+<rect x="243.6" y="436" width="24.4" height="8" fill="#8B949E"/>
+<rect x="48" y="436" width="220" height="8" rx="3" fill="none" stroke="#2B323C"/>
+<text x="280" y="443" font-size="11" fill="#8B94A1">9 runs · 67% success</text>
+<circle cx="52" cy="454" r="3.5" fill="#3FB950"/>
+<text x="62" y="457" font-size="11" fill="#8B94A1">last: success · 19 Sep 2026, 10:24</text>
+<rect x="28" y="472" width="824" height="78" rx="10" fill="#161B22" stroke="#2B323C"/>
+<text x="48" y="498" font-size="14" fill="#E6EDF3" font-weight="600">telegram-bot</text>
+<text x="48" y="514" font-size="11" fill="#8B94A1">Docker</text>
+<rect x="738" y="486" width="58" height="20" rx="10" fill="#0D1117" stroke="#8B94A1"/>
+<text x="767.0" y="500" font-size="10" fill="#8B94A1" text-anchor="middle" font-weight="600">dormant</text>
+<rect x="48" y="524" width="220" height="8" rx="3" fill="#161B22"/>
+<rect x="48.0" y="524" width="220.0" height="8" fill="#3FB950"/>
+<rect x="48" y="524" width="220" height="8" rx="3" fill="none" stroke="#2B323C"/>
+<text x="280" y="531" font-size="11" fill="#8B94A1">10 runs · 100% success</text>
+<circle cx="52" cy="542" r="3.5" fill="#3FB950"/>
+<text x="62" y="545" font-size="11" fill="#8B94A1">last: success · 31 May 2026, 12:29</text>
+<rect x="28" y="560" width="824" height="78" rx="10" fill="#161B22" stroke="#2B323C"/>
+<text x="48" y="586" font-size="14" fill="#E6EDF3" font-weight="600">portfolio-html</text>
+<text x="48" y="602" font-size="11" fill="#8B94A1">pages build and deployment</text>
+<rect x="738" y="574" width="58" height="20" rx="10" fill="#0D1117" stroke="#8B94A1"/>
+<text x="767.0" y="588" font-size="10" fill="#8B94A1" text-anchor="middle" font-weight="600">dormant</text>
+<rect x="48" y="612" width="220" height="8" rx="3" fill="#161B22"/>
+<rect x="48.0" y="612" width="183.3" height="8" fill="#3FB950"/>
+<rect x="231.3" y="612" width="36.7" height="8" fill="#8B949E"/>
+<rect x="48" y="612" width="220" height="8" rx="3" fill="none" stroke="#2B323C"/>
+<text x="280" y="619" font-size="11" fill="#8B94A1">12 runs · 83% success</text>
+<circle cx="52" cy="630" r="3.5" fill="#3FB950"/>
+<text x="62" y="633" font-size="11" fill="#8B94A1">last: success · 31 Mar 2026, 18:19</text>
+<text x="28" y="668" font-size="10" fill="#8B94A1">Generated by a scheduled GitHub Action · github.com/DenGuleDansker/DenGuleDansker</text>
+</svg>

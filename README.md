@@ -9,6 +9,9 @@
    \_/\_/\___|_\__\___/_|_|_\___|  \__\___/ |_|_|_\_, | | .__/_| \___/_| |_|_\___|            
                                                   |__/  |_|
 ```
+## Pipelines
+![Pipeline dashboard](./assets/pipeline-dashboard.svg)
+
 ## Stats:
 ![DenGuleDanskers's Graph](https://github-readme-activity-graph.vercel.app/graph?username=DenGuleDansker&custom_title=DenGuleDanskers's%20GitHub%20Activity%20Graph&bg_color=0C1014&color=2AA889&line=2AA889&point=2AA889&area_color=599CAB&title_color=#2AA889&area=true)
 <br>
