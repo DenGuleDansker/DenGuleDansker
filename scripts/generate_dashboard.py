@@ -3,6 +3,7 @@
 import datetime
 import os
 import urllib.request
+import urllib.error
 import json
 
 OWNER = "DenGuleDansker"
@@ -32,12 +33,19 @@ def fetch_runs(repo):
     url = f"https://api.github.com/repos/{OWNER}/{repo}/actions/runs?per_page=100"
     runs = []
     while url:
-        req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
+        req = urllib.request.Request(url, headers={
+            "Accept": "application/vnd.github+json",
+            "User-Agent": f"{OWNER}-pipeline-dashboard",
+        })
         if TOKEN:
             req.add_header("Authorization", f"Bearer {TOKEN}")
-        with urllib.request.urlopen(req) as resp:
-            data = json.loads(resp.read())
-            link = resp.headers.get("Link", "")
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+                link = resp.headers.get("Link", "")
+        except urllib.error.HTTPError as e:
+            print(f"::error::Failed fetching {url} -> HTTP {e.code}: {e.read().decode()[:300]}")
+            raise
         runs.extend(data.get("workflow_runs", []))
         url = None
         for part in link.split(","):
