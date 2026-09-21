@@ -7,7 +7,7 @@ import urllib.error
 import json
 
 OWNER = "DenGuleDansker"
-REPOS = ["discordBot", "AgentStatusHook", "react-resume", "telegram-bot", "portfolio-html"]
+REPOS = ["discordBot", "AgentStatusHook", "react-resume", "portfolio-html"]
 # NOTE: the default `secrets.GITHUB_TOKEN` in Actions is scoped only to the
 # repo the workflow runs in, so using it to read Actions data on the other
 # (public) repos below returns 404. These repos are public, so unauthenticated
